@@ -293,13 +293,13 @@ class PasswordAnalyzerGUI:
             random.choice(symbols)
         ]
 
-        
+
         all_characters = lowercase + uppercase + digits + symbols
 
         for _ in range(12):
             password.append(random.choice(all_characters))
 
-        
+
         random.shuffle(password)
 
         password = "".join(password)
